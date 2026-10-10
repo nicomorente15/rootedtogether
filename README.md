@@ -242,6 +242,7 @@ What was fixed after testing on mobile viewports:
 - Image presentation: reserved vertical space for key images using responsive min-height (clamp with vh units) and set img to fill its frame (height:100%, width:100%, object-fit:cover). This keeps images visible and large on small screens instead of being shrunk by adjacent text.
 
 - Contact form: forced the contact section to stack on small viewports and made the form full-width below contact details so fields are not clipped or horizontally scrolled.
+  - Contact form submit: fixed the form action to use mailto:rootedtogetherr@gmail.com so submissions open the visitor's email client and send the filled form to that address. Note: this relies on a configured mail client and may not work for all visitors; consider a server-side or third-party form service for reliable collection.
 
 - Horizontal-scroll fixes: added small-screen safety rules (overflow-x: hidden on container, max-width:100% for children, box-sizing adjustments) to eliminate horizontal scrolling at narrow widths.
 
